@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+  color: limegreen; /* Matrix green theme */
+  margin: 0;
+}
+
+#matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure content appears above the background */
+}
+
+#main-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black backdrop */
+}
+
+/* Tab styles */
+.nav-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent horizontal scrollbar */
+}
+
+.nav-tabs li {
+  float: left;
+  margin-right: 10px;
+}
+
+.nav-tabs li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: inherit; /* Inherit the matrix green color */
+  border-radius: 5px 5px 0 0;
+}
+
+.nav-tabs li a.active {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker backdrop for active tab */
+}
+
+/* Content area */
+#tab-content {
+  clear: both;
+  padding: 20px;
+}
